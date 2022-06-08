@@ -1,0 +1,32 @@
+service: glowpick-nestjs-api
+
+plugins:
+  - serverless-offline
+  - serverless-aws-alias
+
+provider:
+  name: aws
+  runtime: nodejs14.x
+  region: ${opt:region, 'ap-northeast-2'}
+  memorySize: 192
+  timeout: 180
+  stage: ${opt:stage, 'dev'}
+  environment:
+    NODE_ENV: ${self:provider.stage}
+  versionFunctions: true
+  stackName:
+  apiName:
+
+functions:
+  app:
+    name:
+    handler: dist/serverless.handler
+    vpc:
+      securityGroupIds:
+
+      subnetIds:
+
+    events:
+      - http:
+          method: any
+          path: '/{proxy+}'
