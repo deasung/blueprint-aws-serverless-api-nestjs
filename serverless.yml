@@ -1,4 +1,4 @@
-service: glowpick-nestjs-api
+service: blueprint-aws-serverless-api-nestjs
 
 plugins:
   - serverless-offline

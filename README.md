@@ -1,8 +1,4 @@
 
-## glowpick-nestjs-api
-
-[glowpick-nestjs-api](https://github.com/glowpick-service/glowpick-api-nestjs) glowpick nestjs 서버리스 애플리케이션
-
 ## Installation
 
 ```bash

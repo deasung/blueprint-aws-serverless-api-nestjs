@@ -44,7 +44,6 @@ export default {
         },
       },
     },
-    elasticsearch_log_url: process.env.ES_GLOWPICK_LOG,
     elasticsearch_index_product: process.env.ES_INDEX_PRODUCT
   },
 };
